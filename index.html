@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stlyle.css">
-    <script src="scripts.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
     </style>
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <img class="logo" src="img/logo sifrao.gif" alt="logo">
+    <img class="logo" src="img/cifrao.jpg" alt="logo">
 
     <main>
         <label>
@@ -32,16 +32,16 @@
         </label>
         <label>
             valor
-            <input placeholder="R$ 10,000,00">
+            <input class="input" placeholder="R$ 10,000,00">
         </label>
 
-        <button>Converter</button>
+        <button class="convertButton">Converter</button>
         <section>
             <div class="moedas">
                 <img src="img/Real.png" alt="brasil">
 
                 <p class="coin">Real</p>
-                <p class="coin-moedas">R$ 0.00</p>
+                <p class="coin-converter">R$ 0.00</p>
             </div>
 
             <img class="seta" src="img/seta.png">
@@ -51,7 +51,7 @@
                 <img src="img/dolar.png" alt="dolar">
 
                 <p class="coin">Dólar</p>
-                <p class="coin-moedas">US$ 0.00</p>
+                <p class="coin-moedas">USD$ 0.00</p>
             </div>
 
         </section>
@@ -59,5 +59,6 @@
     </main>
 
 </body>
+<script src="scripts.js"></script>
 
 </html>
