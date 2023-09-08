@@ -18,7 +18,7 @@ function convertValues() {
     coinConverter.innerHTML = new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD"
-    }).format(convertValues)
+    }).format(covertedValue)
 
     console.log(covertedValue)
 }
