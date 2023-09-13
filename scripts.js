@@ -3,7 +3,7 @@ const currencySelect = document.querySelector(".currency-select")
 
 function convertValues() {
     const input = document.querySelector(".input").value //valor que colocar no conversor 
-    const coinVelue = document.querySelector(".coin-converter") //valor em REAL
+    const currencyValueConverted = document.querySelector(".currencyValueConverted") //valor em REAL
     const coinConverter = document.querySelector(".coin-moedas") //valor em DÓLAR 
 
     console.log(currencySelect.value)
@@ -12,7 +12,14 @@ function convertValues() {
 
     const covertedValue = input / dolarToday
 
-    coinVelue.innerHTML = new Intl.NumberFormat("pt-BR", {
+    if(currencySelect.value == "dolar"){
+
+    }
+    if(currencySelect.value =="euro"){
+
+    }
+
+    currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL"
     }).format(input)
